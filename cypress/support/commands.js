@@ -9,6 +9,16 @@
 // ***********************************************
 //
 //
+
+Cypress.Commands.add('waitTime', () => {
+    cy.wrap(null).then(() => {
+        cy.wait(10000)
+    })
+})
+
+
+
+
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
@@ -23,3 +33,5 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
