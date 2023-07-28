@@ -72,7 +72,7 @@ describe('TD Search Scenarios', function(){
                 expect(6).to.equal($el.length)
             })
 
-            //Step to click on the first forum link and validate the page dispalyed correctly
+            //Step to click on the first forum link and validate the page dispalyed correctly for the first link
             cy.get('ul.jaVibZ').find("li.fJHqiq a h2").should('be.visible').then(($el) => {
                 const text = $el.eq(0).text()
                 cy.log("first link text : " + text)
