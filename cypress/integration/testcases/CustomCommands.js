@@ -2,10 +2,6 @@
 
 describe('Custom commands', () => {
 
-    Cypress.Commands.add("click links", () => {
-
-    })
-
     Cypress.Commands.add("launchTDapp", () => {
 
         //Step to launch the app
