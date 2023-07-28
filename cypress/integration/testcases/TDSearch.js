@@ -23,15 +23,13 @@ describe('TD Search Scenarios', function(){
         it('Validation of TD Search Bar', function() {
             const hmPage = new homePage()
             let actValue
-            Cypress.Screenshot.defaults({
-                screenshotOnRunFailure: false,
-                blackout:['iframe']
-            })
+            cy.viewport(1920, 1080)
+
             //Step to launch the TD App
             hmPage.lauchTDApp()
 
             //Click on the menu links
-            hmPage.openMenuLinks().click()
+            // hmPage.openMenuLinks().click()
 
             //click on the search button
             hmPage.clickSearchIcon().click()
@@ -69,34 +67,10 @@ describe('TD Search Scenarios', function(){
                 }
             })
 
-            cy.frameLoaded('iframe.aut-iframe').as('iframe')
-            // cy.iframe('iframe.aut-iframe').find('ul.jaVibZ').then(function(){
-            //     cy.get('ul.jaVibZ').should('be.visible')
-            // })
+            cy.get('ul.jaVibZ', {timeout : 10000}).should('be.visible')
 
-            // cy.get('@iframe').each(($el, index, $list) => {
-            //     $el.find('ul.jaVibZ').should('be.visible')
-
-            // })
-
-            // cy.iframe('iframe.aut-iframe').then(($iframe) => {
-            //     const $body = $iframe.contents().find('body')
-            //     cy.wrap($body).find('ul.jaVibZ').should('be.visible')
-            // })
-
-            // cy.iframe('iframe.aut-iframe').find('ul.jaVibZ').should('be.visible').then(($el) => {
-            //     cy.log($el.length)
-            // })
-
-            // cy.get('ul.jaVibZ', {timeout : 10000}).should('be.visible')
-
-            // cy.xpath("//span[contains(text(), 'Forums')]").should('be.visible').then(($el) => {
-            //     cy.log($el.length)
-            // })
-            
-            // Step to find the Forums links and validate the count
-            cy.get('ul.jaVibZ').find("li.fJHqiq a span").should('be.visible').then(($el) => {
-                const len = $el.length
+            cy.xpath("//span[contains(text(), 'Forums')]").should('be.visible').then(($el) => {
+                cy.log($el.length)
                 expect(6).to.equal($el.length)
             })
 
@@ -104,7 +78,7 @@ describe('TD Search Scenarios', function(){
             cy.get('ul.jaVibZ').find("li.fJHqiq a h2").then(($el) => {
                 const text = $el.eq(0).text()
                 cy.log("first link text : " + text)
-                $el.eq(0).click()
+                cy.wrap($el.eq(0)).click()
                 cy.get('.message-subject > span > div').should('be.visible').then(($e2) => {
                     const text1 = $e2.text().replace(/\n/g, '').replace(/\t/g, '')
                     cy.log("second page text : " + text1)

@@ -19,7 +19,7 @@ class homePage{
     }
 
     clickSearchIcon() {
-        return cy.get("#search-input div[aria-label='Search']")
+        return cy.get("button#search-button")
     }
 
     searchButton() {
@@ -27,11 +27,11 @@ class homePage{
     }
 
     searchTextBox() {
-        return cy.get("[placeholder='Search']")
+        return cy.get('input[placeholder="Search TELUS.com"]')
     }
 
     searchResultsList() {
-        return cy.get('.jOUPgh', {
+        return cy.get('li[data-test="searchResultItem"] a.sc-eZkCL.dSJsOL', {
             timeout: 10000
           })
     }
