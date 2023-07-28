@@ -1,4 +1,4 @@
-//Test : to validate the Telus.com search bar
+//Test : to validate the Telus.com search bar task
 /// <reference types="cypress" />
 
 
