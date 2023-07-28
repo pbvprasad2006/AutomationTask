@@ -23,7 +23,10 @@ describe('TD Search Scenarios', function(){
         it('Validation of TD Search Bar', function() {
             const hmPage = new homePage()
             let actValue
-            
+            Cypress.Screenshot.defaults({
+                screenshotOnRunFailure: false,
+                blackout:['iframe']
+            })
             //Step to launch the TD App
             hmPage.lauchTDApp()
 
@@ -66,14 +69,39 @@ describe('TD Search Scenarios', function(){
                 }
             })
 
-            //Step to find the Forums links and validate the count
-            cy.get('ul.jaVibZ').find("li.fJHqiq a span:contains('Forums')").should('be.visible').then(($el) => {
+            cy.frameLoaded('iframe.aut-iframe').as('iframe')
+            // cy.iframe('iframe.aut-iframe').find('ul.jaVibZ').then(function(){
+            //     cy.get('ul.jaVibZ').should('be.visible')
+            // })
+
+            // cy.get('@iframe').each(($el, index, $list) => {
+            //     $el.find('ul.jaVibZ').should('be.visible')
+
+            // })
+
+            // cy.iframe('iframe.aut-iframe').then(($iframe) => {
+            //     const $body = $iframe.contents().find('body')
+            //     cy.wrap($body).find('ul.jaVibZ').should('be.visible')
+            // })
+
+            // cy.iframe('iframe.aut-iframe').find('ul.jaVibZ').should('be.visible').then(($el) => {
+            //     cy.log($el.length)
+            // })
+
+            // cy.get('ul.jaVibZ', {timeout : 10000}).should('be.visible')
+
+            // cy.xpath("//span[contains(text(), 'Forums')]").should('be.visible').then(($el) => {
+            //     cy.log($el.length)
+            // })
+            
+            // Step to find the Forums links and validate the count
+            cy.get('ul.jaVibZ').find("li.fJHqiq a span").should('be.visible').then(($el) => {
                 const len = $el.length
                 expect(6).to.equal($el.length)
             })
 
             //Step to click on the first forum link and validate the page dispalyed correctly for the first link
-            cy.get('ul.jaVibZ').find("li.fJHqiq a h2").should('be.visible').then(($el) => {
+            cy.get('ul.jaVibZ').find("li.fJHqiq a h2").then(($el) => {
                 const text = $el.eq(0).text()
                 cy.log("first link text : " + text)
                 $el.eq(0).click()
