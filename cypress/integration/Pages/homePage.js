@@ -43,7 +43,9 @@ class homePage{
     }
 
     searchSelectionResults() {
-        return "//div[text() = 'Forums']/../..//a"
+        return cy.get(".fJHqiq a h2", {
+            timeout: 20000
+          })
     }
 }
 
