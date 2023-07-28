@@ -1,6 +1,8 @@
 class homePage{
     
     lauchTDApp() {
+        cy.viewport(1920, 1080)
+        
         //Step to launch the app
         cy.visit("https://www.telus.com/en")
 

@@ -23,8 +23,7 @@ describe('TD Search Scenarios', function(){
         it('Validation of TD Search Bar', function() {
             const hmPage = new homePage()
             let actValue
-            cy.viewport(1920, 1080)
-
+            
             //Step to launch the TD App
             hmPage.lauchTDApp()
 
