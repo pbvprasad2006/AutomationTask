@@ -7,7 +7,7 @@ on:
 
 jobs:
   cypress_tests:
-    runs-on: windows=latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout
