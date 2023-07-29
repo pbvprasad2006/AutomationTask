@@ -1,0 +1,14 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cypress_tests:
+    runs-on: windows=latest
+
+    steps:
+      - name: checkout Repository
+        uses: 
