@@ -2,7 +2,7 @@
   "name": "automation-task",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cypress/plugins/index.js",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
