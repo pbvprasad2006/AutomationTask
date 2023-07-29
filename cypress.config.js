@@ -6,6 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     specPattern:'cypress/integration/testcases/*.js',
+    "pluginsFile": false,
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/report/mocha-report",
@@ -15,5 +16,5 @@ module.exports = defineConfig({
         "timestamp": "mmddyyyy_HHMMss"
     }
   },
-  
+    
 });
