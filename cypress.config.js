@@ -7,6 +7,8 @@ module.exports = defineConfig({
     },
     specPattern:'cypress/integration/testcases/*.js',
     "reporter": "mochawesome",
+    "pluginsFile": false,
+    "rollupConfigFile": "rollup.config.js",
     "reporterOptions": {
         "reportDir": "cypress/report/mocha-report",
         "overwrite": false,
