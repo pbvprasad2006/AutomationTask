@@ -11,8 +11,15 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: actions/checkout@v2
+
+      - name: Setup up Node.js
+        uses: actions/setup-node@v2
         with:
-          start: npm start
+          node-version: 14
+      
+      - name: Install Dependencies
+        run: npm Install
+
+      - name: Run Cypress Tests
+        run: npx cypress run --headless
