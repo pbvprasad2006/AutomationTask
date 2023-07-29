@@ -1,1 +1,3 @@
-{}
+{
+    "pluginsFile": "cypress/integration/plugins/index.js"
+}
