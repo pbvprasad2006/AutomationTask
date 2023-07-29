@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "cypress/plugins/index.js",
+  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "start": "http-server",
