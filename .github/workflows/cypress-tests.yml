@@ -10,5 +10,9 @@ jobs:
     runs-on: windows=latest
 
     steps:
-      - name: checkout Repository
-        uses: 
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          start: npm start
