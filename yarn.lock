@@ -4178,6 +4178,13 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rollup@^3.27.0:
+  version "3.27.0"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-3.27.0.tgz"
+  integrity sha512-aOltLCrYZ0FhJDm7fCqwTjIUEVjWjcydKBV/Zeid6Mn8BWgDCUBBWT5beM5ieForYNo/1ZHuGJdka26kvQ3Gzg==
+  optionalDependencies:
+    fsevents "~2.3.2"
+
 rxjs@^6.3.3:
   version "6.6.7"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-6.6.7.tgz"
