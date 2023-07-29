@@ -1,3 +1,4 @@
 {
-    "pluginsFile": false
+    "pluginsFile": false,
+    "rollupConfigFile": "rollup.config.js"
 }
