@@ -1,3 +1,8 @@
 {
-    "pluginsFile": "cypress/plugins/index.js"
+  "e2e": {
+    "setupNodeEvents": true
+  },
+  "component": {
+    "setupNodeEvents": true
   }
+}
