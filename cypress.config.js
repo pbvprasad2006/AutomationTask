@@ -5,10 +5,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    specPattern:'cypress/integration/testcases/*.js',
+    specPattern:'cypress/integration/testcases/TDSearch.js',
     "reporter": "mochawesome",
-    "pluginsFile": false,
-    "rollupConfigFile": "rollup.config.js",
+    "pluginsFile": "cypress/plugins/index.js",
+    "rollupConfigFile": "cypress/plugins/rollup.config.js",
     "reporterOptions": {
         "reportDir": "cypress/report/mocha-report",
         "overwrite": false,
