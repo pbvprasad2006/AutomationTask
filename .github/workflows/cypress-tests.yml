@@ -3,10 +3,7 @@ name: Cypress Tests
 on:
   schedule:
     - cron: '0 20 * * *'
-  push:
-    branches:
-      - main
-
+  
 jobs:
   cypress_tests:
     runs-on: ubuntu-latest
