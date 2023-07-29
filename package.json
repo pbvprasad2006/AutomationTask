@@ -14,13 +14,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.2.0",
+    "cypress": "^4.12.1",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
     "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.3.0"
+    "mochawesome-merge": "^4.3.0",
+    "xvfb": "^0.4.0"
   }
 }
