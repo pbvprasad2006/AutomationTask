@@ -20,10 +20,12 @@
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
-    "rollup": "^3.0.0"
+    "rollup": "^3.0.0",
+    "core-js": "latest",
   },
   "dependencies": {
     "build": "^0.1.4",
+    "core-js": "^3.32.0",
     "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
