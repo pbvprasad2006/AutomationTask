@@ -27,4 +27,4 @@ jobs:
         run: npm install --force
 
       - name: Run Cypress Tests
-        run: npx cypress run
+        run: npx cypress run --browser chrome
