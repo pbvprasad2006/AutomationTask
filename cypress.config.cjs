@@ -2,10 +2,7 @@ const { defineConfig } = require("cypress")
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    specPattern:'cypress/integration/testcases/TDSearch.js',
+    specPattern:'cypress/integration/testcases/*.spec.js',
     "reporter": "mochawesome",
     "rollupConfigFile": "cypress/plugins/rollup.config.js",
     "reporterOptions": {
@@ -15,5 +12,5 @@ module.exports = defineConfig({
         "json": true,
         "timestamp": "mmddyyyy_HHMMss"
     }
-  },
+  }
 });
