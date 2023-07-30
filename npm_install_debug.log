@@ -1,0 +1,13 @@
+npm verb cli /usr/local/share/nvm/versions/node/v20.4.0/bin/node /usr/local/share/nvm/versions/node/v20.4.0/bin/npm
+npm info using npm@9.7.2
+npm info using node@v20.4.0
+npm verb title npm install
+npm verb argv "install" "--legacy-peer-deps" "--loglevel" "verbose"
+npm verb logfile logs-max:10 dir:/home/codespace/.npm/_logs/2023-07-30T01_47_36_439Z-
+npm verb logfile /home/codespace/.npm/_logs/2023-07-30T01_47_36_439Z-debug-0.log
+
+up to date, audited 1 package in 293ms
+
+found 0 vulnerabilities
+npm verb exit 0
+npm info ok 
