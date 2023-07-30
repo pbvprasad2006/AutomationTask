@@ -24,7 +24,7 @@ jobs:
           node-version: 14
       
       - name: Install Dependencies
-        run: npm Install -g npm
+        run: npm install -g npm
 
       - name: Run Cypress Tests
         run: npx cypress run
