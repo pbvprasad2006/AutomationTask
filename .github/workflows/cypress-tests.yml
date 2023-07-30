@@ -2,7 +2,7 @@ name: Cypress Tests
 
 on:
   schedule:
-    - cron: '25 22 * * *'
+    - cron: '40 17 * * *'
   push:
     branches:
       - main
