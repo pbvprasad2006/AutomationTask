@@ -21,7 +21,7 @@
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
     "rollup": "^3.0.0",
-    "core-js": "latest",
+    "core-js": "latest"
   },
   "dependencies": {
     "build": "^0.1.4",
