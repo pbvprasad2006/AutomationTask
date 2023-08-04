@@ -39,7 +39,7 @@ class homePage{
     }
 
     searchSelection(){
-        return cy.get(".ebtrSW > [dir='auto']", {
+        return cy.get(".styles__SearchLabelContainer-sc-1uotvdz-0.brGolF div[dir='auto']", {
             timeout: 10000
           })
     }
