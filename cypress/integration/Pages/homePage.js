@@ -40,7 +40,7 @@ class homePage{
 
     searchSelection(){
         return cy.get(".styles__SearchLabelContainer-sc-1uotvdz-0.brGolF div[dir='auto']", {
-            timeout: 10000
+            timeout: 12000
           })
     }
 
