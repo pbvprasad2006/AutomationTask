@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://www.telus.com/en",
+    "integrationFolder": "cypress/integration",
+    "testFiles": "**/*.spec.js",
+    "pluginsFile": false
+  }
+  

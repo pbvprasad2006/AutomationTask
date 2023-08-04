@@ -3935,6 +3935,13 @@ minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.npmjs.org/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz"
   integrity sha512-JIYlbt6g8i5jKfJ3xz7rF0LXmv2TkDxBLUkiBeZ7bAx4GnnNMr8xFpGnOxn6GhTEHx3SjRrZEoU+j04prX1ktg==
 
+minimatch@*, minimatch@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-9.0.3.tgz"
+  integrity sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==
+  dependencies:
+    brace-expansion "^2.0.1"
+
 minimatch@^3.0.4:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
@@ -4777,6 +4784,13 @@ rollup@^3.0.0:
   integrity sha512-iVomS2lySi4BM2QJb7lGZBjSndUEs6Ip+VDl25jcbM99VI5vWeEitvUSiNQkQkwqEiI4515m5shjyuwPcXS5Dg==
   optionalDependencies:
     fsevents "~2.3.2"
+
+run@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/run/-/run-1.4.0.tgz"
+  integrity sha512-962oBW07IjQ9SizyMHdoteVbDKt/e2nEsnTRZ0WjK/zs+jfQQICqH0qj0D5lqZNuy0JkbzfA6IOqw0Sk7C3DlQ==
+  dependencies:
+    minimatch "*"
 
 rxjs@^6.3.3:
   version "6.6.7"
